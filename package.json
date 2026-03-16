@@ -1,0 +1,10 @@
+{
+  "name": "smart-resume-tailor-ats-preview",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node tests/smoke.test.mjs",
+    "preview": "node scripts/preview.mjs"
+  }
+}

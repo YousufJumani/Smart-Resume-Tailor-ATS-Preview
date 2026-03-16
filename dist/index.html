@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Resume Tailor + ATS Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <div>
+          <p class="tag">Career Tools</p>
+          <h1>Smart Resume Tailor + ATS Preview</h1>
+          <p class="subcopy">Compare your resume against a role, surface missing keywords, and preview your ATS-optimized plain-text output.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Vanilla JS</span>
+            <span class="tech-tag">NLP-lite Keyword Analysis</span>
+          </div>
+        </div>
+        <aside class="score-card">
+          <span>Live ATS Match</span>
+          <strong id="score-pill">0%</strong>
+        </aside>
+      </header>
+
+      <section class="workspace">
+        <form id="resume-form" class="editor-panel">
+          <div class="panel-head"><h2>Input</h2><p>Paste the job description and your current resume text.</p></div>
+          <label>Job description<textarea name="jobDescription" rows="10" required>We are hiring a frontend engineer with React, TypeScript, accessibility, testing, performance optimization, API integration, Git, CI/CD, and stakeholder collaboration experience.</textarea></label>
+          <label>Resume<textarea name="resumeContent" rows="11" required>Frontend developer experienced with JavaScript and React.
+Built dashboards and reusable UI components.
+Integrated REST APIs and improved page performance.
+Collaborated with design and product teams in agile delivery.</textarea></label>
+          <button type="submit">Analyze Resume</button>
+        </form>
+
+        <section id="resume-result" class="report-panel" aria-live="polite"></section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
