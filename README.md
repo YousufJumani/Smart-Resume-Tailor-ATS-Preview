@@ -1,4 +1,5 @@
 # Smart Resume Tailor + ATS Preview
+<img width="1358" height="1078" alt="Untitled design (16)" src="https://github.com/user-attachments/assets/41f06448-518d-46ed-81f9-86940f97913a" />
 
 ## Overview
 Resume matching tool that compares resume content against a target job description and highlights ATS alignment.\
